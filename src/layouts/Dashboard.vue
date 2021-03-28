@@ -22,7 +22,7 @@
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
-    <a-layout>
+    <a-layout style="height: 100vh">
       <a-layout-header style="background: #fff; padding: 0">
         <a-icon
           class="trigger"
@@ -36,10 +36,14 @@
           padding: '24px',
           background: '#fff',
           minHeight: '280px',
+          overflowY: 'scroll',
         }"
       >
         <router-view />
       </a-layout-content>
+      <a-layout-footer style="text-align: center">
+        Created by Saransh Mittal
+      </a-layout-footer>
     </a-layout>
   </a-layout>
 </template>
