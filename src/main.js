@@ -2,6 +2,7 @@ import Vue from 'vue';
 import { Layout, Menu, Icon } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import App from './App';
+import router from './router'
 
 Vue.component(Icon.name, Icon);
 Vue.component(Layout.name, Layout);
@@ -14,5 +15,6 @@ Vue.component(Menu.Item.name, Menu.Item);
 Vue.config.productionTip = false;
 
 new Vue({
+    router,
     render: (h) => h(App)
 }).$mount('#app');
