@@ -1,8 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import { Layout, Menu, Icon } from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+import App from './App';
 
-Vue.config.productionTip = false
+Vue.component(Icon.name, Icon);
+Vue.component(Layout.name, Layout);
+Vue.component(Layout.Header.name, Layout.Header);
+Vue.component(Layout.Content.name, Layout.Content);
+Vue.component(Layout.Sider.name, Layout.Sider);
+Vue.component(Menu.name, Menu);
+Vue.component(Menu.Item.name, Menu.Item);
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    render: (h) => h(App)
+}).$mount('#app');
